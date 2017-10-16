@@ -6,7 +6,7 @@ Selenium Webdriver Automation Framework
 MS Test Framework
 PageObject Framework
 
-
+++ The 5-Day Weather forecast application must be install before the Test
  
 ++ Please download the zip folder from github: https://github.com/djeasybee/Bayo5DayWeatherForecastAcceptanceTest.git
 
