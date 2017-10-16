@@ -38,6 +38,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         
                         Assert.IsNotNull(Condition);
                         Console.WriteLine(Condition);
+                        Assert.IsTrue(Condition.Length < 4);
+                        Assert.IsFalse(Condition.Contains("."));
 
                     }
 
@@ -50,6 +52,9 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         Console.WriteLine(WindDirection);
 
                         Assert.IsNotNull(WindDirection);
+                       
+                        
+                        Assert.IsFalse(WindDirection.Contains("."));
 
                     }
 
@@ -60,6 +65,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         var RainFall = summary.getAggregateRainFall.Text;
                         Console.WriteLine(RainFall);
                         Assert.IsNotNull(RainFall);
+                        Assert.IsTrue(RainFall.Length < 4);
+                        Assert.IsFalse(RainFall.Contains("."));
 
                     }
 
@@ -75,11 +82,10 @@ namespace BayoWeatherForecastTest.StepDefinitions
                     {
                         PageFactory.InitElements(driver, summary);
                         var Condition = summary.getWedDayMaxTemp.Text;
-
-                        int temp = 16;
-                        Console.WriteLine((temp % 1) == 0);
-
+                       
                         Assert.IsNotNull(Condition);
+                        Assert.IsFalse(Condition.Contains("."));
+
 
                     }
 
@@ -90,8 +96,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         var WindDirection = summary.getWedSpeedWind.Text;
 
                         Console.WriteLine(WindDirection);
-
                         Assert.IsNotNull(WindDirection);
+                        Assert.IsFalse(WindDirection.Contains("."));
 
                     }
 
@@ -102,6 +108,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         var RainFall = summary.getWedAggregateRainFall.Text;
                         Console.WriteLine(RainFall);
                         Assert.IsNotNull(RainFall);
+                                               
+                        Assert.IsFalse(RainFall.Contains("."));
 
                     }
 
@@ -119,10 +127,9 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         PageFactory.InitElements(driver, summary);
                         var Condition = summary.getThursDayMaxTemp.Text;
 
-                        int temp = 16;
-                        Console.WriteLine((temp % 1) == 0);
-
-                        Assert.IsNotNull(Condition);
+                      Assert.IsNotNull(Condition);
+                        
+                        Assert.IsFalse(Condition.Contains("."));
                     }
                     row.TryGetValue("Wind Speed and Direction", out output);
                     if (output == "Yes")
@@ -133,6 +140,9 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         Console.WriteLine(WindDirection);
 
                         Assert.IsNotNull(WindDirection);
+                        
+                        Assert.IsFalse(WindDirection.Contains("."));
+
 
                     }
 
@@ -143,7 +153,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         var RainFall = summary.getThursAggregateRainFall.Text;
                         Console.WriteLine(RainFall);
                         Assert.IsNotNull(RainFall);
-
+                        
+                        Assert.IsFalse(RainFall.Contains("."));
                     }
 
                 }
@@ -164,6 +175,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         Console.WriteLine(Condition);
 
                         Assert.IsNotNull(Condition);
+                        
+                        Assert.IsFalse(Condition.Contains("."));
 
                     }
 
@@ -176,6 +189,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         Console.WriteLine(WindDirection);
 
                         Assert.IsNotNull(WindDirection);
+                        
+                        Assert.IsFalse(WindDirection.Contains("."));
 
                     }
 
@@ -186,6 +201,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         var RainFall = summary.getFriAggregateRainFall.Text;
                         Console.WriteLine(RainFall);
                         Assert.IsNotNull(RainFall);
+                        
+                        Assert.IsFalse(RainFall.Contains("."));
 
                     }
 
@@ -205,6 +222,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         var Condition = summary.getSatDayMaxTemp.Text;
                         Assert.IsNotNull(Condition);
                         Console.WriteLine(Condition);
+                        
+                        Assert.IsFalse(Condition.Contains("."));
 
                     }
 
@@ -217,6 +236,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         Console.WriteLine(WindDirection);
 
                         Assert.IsNotNull(WindDirection);
+                        
+                        Assert.IsFalse(WindDirection.Contains("."));
 
                     }
 
@@ -227,9 +248,11 @@ namespace BayoWeatherForecastTest.StepDefinitions
                         var RainFall = summary.getSatAggregateRainFall.Text;
                         Console.WriteLine(RainFall);
                         Assert.IsNotNull(RainFall);
-                        
-                        
-                        
+                       
+                        Assert.IsFalse(RainFall.Contains("."));
+
+
+
                     }
                 }
 
