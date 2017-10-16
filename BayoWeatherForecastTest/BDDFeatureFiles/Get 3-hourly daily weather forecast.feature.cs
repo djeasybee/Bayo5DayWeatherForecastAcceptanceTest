@@ -192,7 +192,7 @@ namespace BayoWeatherForecastTest.BDDFeatureFiles
                         "Saturday",
                         "Yes"});
 #line 34
-     testRunner.When("I click on each forecast Days and the 3_hrl summary should display", ((string)(null)), table1, "When ");
+     testRunner.Then("I click on each forecast Days and the 3_hrl summary should display", ((string)(null)), table1, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

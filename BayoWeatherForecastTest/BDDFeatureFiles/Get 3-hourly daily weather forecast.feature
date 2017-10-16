@@ -31,7 +31,7 @@
   
   Scenario: Validate that the 3 hourly forecast is displayed for each of the five day forecasts
     Given I am on the 5 day Weather Forecast homepage
-     When I click on each forecast Days and the 3_hrl summary should display
+     Then I click on each forecast Days and the 3_hrl summary should display
      
       | Forecast Days | 3 hourly display | 
       | Tuesday       | Yes              | 

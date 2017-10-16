@@ -162,8 +162,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
             Assert.IsTrue(hourlyForecastDisplayed.Displayed);
             Thread.Sleep(2000);
         }
-
         [When(@"I click on each forecast Days and the 3_hrl summary should display")]
+        [Then(@"I click on each forecast Days and the 3_hrl summary should display")]
         public void WhenIClickOnEachForecastDaysAndTheHurlsSummaryShouldDisplay(Table table)
         {
            
