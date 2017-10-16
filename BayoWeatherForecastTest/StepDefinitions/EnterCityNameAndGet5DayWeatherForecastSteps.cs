@@ -23,14 +23,13 @@ namespace BayoWeatherForecastTest.StepDefinitions
         public void GivenILaunchMyBrowser()
         {
             driver = new ChromeDriver();
-            // driver.Navigate().GoToUrl("http://localhost:3000/");
-
+           
         }
 
         [When(@"I enter the local url address")]
         public void WhenIEnterTheLocalUrlAddress()
         {
-            driver.Navigate().GoToUrl("http://localhost:3000/");
+            driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["applicationUrl"]);
         }
 
         [Then(@"I am successfully navigated to the Weather App page")]
@@ -44,9 +43,8 @@ namespace BayoWeatherForecastTest.StepDefinitions
         [Given(@"I am on the (.*) day Weather Forecast homepage")]
         public void GivenIAmOnTheDayWeatherForecasthomepage(int p0)
         {
-
-            driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("http://localhost:3000/");
+             driver = new ChromeDriver();
+            driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["applicationUrl"]);
 
             PageFactory.InitElements(driver, home);
             var NavigateToHomePage = home.getHomepage;

@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
+using System.Threading;
 
 namespace BayoWeatherForecastTest
 {
@@ -27,7 +28,7 @@ namespace BayoWeatherForecastTest
         {
             if (driver != null)
             {
-                //driver.Quit();
+                Thread.Sleep(3000);
                 driver.Close();
                 driver.Dispose();
                 driver = null;
