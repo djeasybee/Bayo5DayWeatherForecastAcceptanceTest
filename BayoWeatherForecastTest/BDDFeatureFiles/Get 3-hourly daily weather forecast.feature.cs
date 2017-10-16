@@ -113,21 +113,21 @@ namespace BayoWeatherForecastTest.BDDFeatureFiles
         public virtual void HideThe3_HourlyForecastForTheDay()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Hide the 3-hourly forecast for the Day", ((string[])(null)));
-#line 18
+#line 14
   this.ScenarioSetup(scenarioInfo);
-#line 19
+#line 15
     testRunner.Given("I am on the 5 day Weather Forecast homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 20
+#line 16
   testRunner.And("I enter a city name \'<CityName>\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 21
+#line 17
      testRunner.And("the 5-day Weather forecast is displayed for the city", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
+#line 18
      testRunner.And("I select and click on a displayed Day", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 23
+#line 19
      testRunner.And("the Day should expand", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
+#line 20
      testRunner.When("I click on the again on the Day", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
+#line 21
      testRunner.Then("the expanded Day should collapsed and the 3hourly display should be hidden from u" +
                     "ser view", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -140,21 +140,21 @@ namespace BayoWeatherForecastTest.BDDFeatureFiles
         public virtual void OpenThe3HourlyDisplaySimutaneously()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open the 3 hourly display simutaneously", ((string[])(null)));
-#line 27
+#line 23
   this.ScenarioSetup(scenarioInfo);
-#line 28
+#line 24
    testRunner.Given("I am on the 5 day Weather Forecast homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 29
+#line 25
   testRunner.And("I enter a city name \'<CityName>\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 30
+#line 26
       testRunner.And("I select and click on a day forecast \'<Day>\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 31
+#line 27
       testRunner.And("the \'<Day>\' summary expanded and the 3_hourly weather forcast is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 32
+#line 28
      testRunner.When("I click on another forecast day \'<Day2>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 33
+#line 29
      testRunner.Then("the expanded Wednesday weather summary should collapsed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 34
+#line 30
       testRunner.And("only Thursday should expand and the 3_hourly weather forcast should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -168,9 +168,9 @@ namespace BayoWeatherForecastTest.BDDFeatureFiles
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate that the 3 hourly forecast is displayed for each of the five day forecas" +
                     "ts", ((string[])(null)));
-#line 36
+#line 32
   this.ScenarioSetup(scenarioInfo);
-#line 37
+#line 33
     testRunner.Given("I am on the 5 day Weather Forecast homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -191,7 +191,7 @@ namespace BayoWeatherForecastTest.BDDFeatureFiles
             table1.AddRow(new string[] {
                         "Saturday",
                         "Yes"});
-#line 38
+#line 34
      testRunner.When("I click on each forecast Days and the 3_hrl summary should display", ((string)(null)), table1, "When ");
 #line hidden
             this.ScenarioCleanup();

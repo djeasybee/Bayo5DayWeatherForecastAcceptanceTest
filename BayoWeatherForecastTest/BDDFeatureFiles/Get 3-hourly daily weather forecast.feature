@@ -10,11 +10,7 @@
      Then the Day should expand 
       And the hourly weather is displayed
   
-  #Scenario: Validate that a 3 hourly forecast is displayed for selected day
-  #  Given I am on the Weather App homepage
-  #   When I select and click on a displayed Day
-  #   Then the 3 hourly weather forcast for Glasgow should display and visible to user
-  
+ 
   Scenario: Hide the 3-hourly forecast for the Day
     Given I am on the 5 day Weather Forecast homepage
 	 And I enter a city name '<CityName>'

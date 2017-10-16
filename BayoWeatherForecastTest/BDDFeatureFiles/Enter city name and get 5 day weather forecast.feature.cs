@@ -90,13 +90,13 @@ namespace BayoWeatherForecastTest.BDDFeatureFiles
         public virtual void NavigateToTheWeatherAppHomePage()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to the Weather App home page", ((string[])(null)));
-#line 7
+#line 6
   this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 7
     testRunner.Given("I launch my browser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
+#line 8
      testRunner.When("I enter the local url address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 10
+#line 9
      testRunner.Then("I am successfully navigated to the Weather App page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -108,9 +108,9 @@ namespace BayoWeatherForecastTest.BDDFeatureFiles
         public virtual void EnterCityNameGet5DayWeatherForecast()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Enter city name get 5 day weather forecast", ((string[])(null)));
-#line 12
+#line 11
 this.ScenarioSetup(scenarioInfo);
-#line 13
+#line 12
     testRunner.Given("I am on the 5 day Weather Forecast homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -128,10 +128,10 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "Aberdeen",
                         "Forecast displayed"});
-#line 14
+#line 13
      testRunner.When("I enter a city name", ((string)(null)), table1, "When ");
-#line 22
-     testRunner.Then("a 5-days Weather forecast should be for the entered city name \'<Results>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 21
+ testRunner.Then("a 5-days Weather forecast should be for the entered city name \'<Results>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
